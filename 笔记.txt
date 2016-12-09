@@ -1,0 +1,30 @@
+1、package 中配置的包版本
+  * 表示  >=0.0.0
+  ^1.2.3 表示 >=1.2.3 && <2.0.0，即一级版本不升级
+  ~1.2.3 表示 >=1.2.3 && <1.3.0，即二级版本不升级
+
+2、webpack命令：
+  webpack 入口文件 目标文件
+  webpack  // 默认配置文件为当前目录的webpack.config.js
+  webpack -w // 持续打包
+
+3、css-loader: 处理CSS文件，根据import 合并 CSS文件的内容，输出给style-loader
+
+4、style-loader: css-loader的输出，将CSS内容放到<head>里的<style>
+
+5、less-loader: 编译less文件，需要同时安装 less
+
+6、postcss-loader: 给CSS添加前缀
+
+7、babel-loader: 用于JS转换，需要同时安装 babel-core
+
+8、babel-preset-es2015: babel的插件，用于转换ES6。 插件包含了babel-plugin-transform-es2015-modules-commonjs，会把ES6模块转成CommonJS模块。
+
+9、babel-preset-react: babel的插件，用于转换JSX
+
+10、eslint-loader: 用于检测JS语法，需要同时安装eslint
+
+11、react react-dom: React库
+
+12、需要在本地安装webpack，否则html-webpack-plugin会报错
+
