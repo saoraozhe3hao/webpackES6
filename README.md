@@ -1,2 +1,2 @@
 # webpackES6
-react + webpack + ES6模块
+react + ES6模块 + webpack
