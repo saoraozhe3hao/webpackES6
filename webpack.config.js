@@ -7,7 +7,8 @@ module.exports = {
     entry: path.join(__dirname, './js/main'), // 入口文件
     output: {
         path: 'dist',
-        filename: 'bundle.js'
+        filename: '[hash].bundle.js',    // 入口chunk 打包的bundle文件名，这个hash是项目的hash
+        chunkFilename: "[chunkhash].bundle.js"  //非 入口chunk 打包的bundle文件名,这个hash是chunk的hash
     },
     module: {
         // 前置加载器
